@@ -27,7 +27,7 @@ function FullName() {
     return (
         <div style={{marginLeft:"auto",marginRight:"auto"}}>
             <h1 style={{fontFamily:"serif",fontSize:"35px"}}>Full Name Display</h1>
-            <form onSubmit={displayFullName}>
+            <form >
                 <div style={{fontSize:"20px",fontFamily:"serif"}}>
                     <span >FirstName:</span>
                 <input type='text' required onChange={handleFname} style={{fontSize:"20px",fontFamily:"serif"}}/>
@@ -36,7 +36,7 @@ function FullName() {
                 <span style={{fontSize:"20px",fontFamily:"serif"}}>Last Name:</span>
                 <input type='text' required onChange={handleLname} style={{fontSize:"20px",fontFamily:"serif"}}/>
                 </div>
-                <button style={{fontSize:"18px"}} type="submit">Submit</button>
+                <button style={{fontSize:"18px"}} type="submit" onClick={displayFullName}>Submit</button>
             </form>
             {flag && <div style={{fontSize:"20px",fontFamily:"serif",marginTop:"30px"}}>FullName: {fname} {lname}</div>}
             
