@@ -38,7 +38,7 @@ function FullName() {
                 </div>
                 <button style={{fontSize:"18px"}} type="submit">Submit</button>
             </form>
-            {flag && <div style={{fontSize:"20px",fontFamily:"serif",marginTop:"30px"}}>FullName : {fname} {lname}</div>}
+            {flag && <div style={{fontSize:"20px",fontFamily:"serif",marginTop:"30px"}}>FullName: {fname} {lname}</div>}
             
         </div>
     );
